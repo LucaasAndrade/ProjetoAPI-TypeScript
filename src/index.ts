@@ -1,6 +1,3 @@
-
-import server from "./server/Server";
-
-const port:number = 5000
-
-server.listen(port, () => console.log(`API rodando na porta ${port}`));
+import { server } from './server/Server';
+   
+server.listen(5000, () => console.log('API rodando na porta 5000'));
