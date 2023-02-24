@@ -1,3 +1,4 @@
 import { server } from './server/Server';
-   
-server.listen(5000, () => console.log('API rodando na porta 5000'));
+
+server.listen(process.env.PORT,
+    () => console.log(`API rodando na porta ${process.env.PORT}`));
